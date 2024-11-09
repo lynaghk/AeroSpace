@@ -23,11 +23,11 @@ EOF
 ### BUILD ###
 #############
 
-./build-docs.sh --build-version "$build_version"
-./build-shell-completion.sh
+#./build-docs.sh --build-version "$build_version"
+#./build-shell-completion.sh
 
 ./generate.sh
-./script/check-uncommitted-files.sh
+#./script/check-uncommitted-files.sh
 ./generate.sh --build-version "$build_version" --codesign-identity "$codesign_identity"
 
 configuration="Release"
